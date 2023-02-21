@@ -120,6 +120,8 @@ a{
     content: "";
 }
 
+/* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+
 .input__area {
     position: relative;
     width: 100%;
@@ -157,6 +159,11 @@ a{
     display: none;   
 }
 
+.custom-radio{
+    position: absolute;
+    right: 18px;
+}
+
 .form-checkbox:checked ~ .custom-radio {
     display: inline-block;
     background-image: url("./img/check.svg");
@@ -166,14 +173,8 @@ a{
     align-self: end;
 }
 
-
-.custom-radio{
-    position: absolute;
-    right: 18px;
-}
-
 .form-checkbox:checked + .cardname {
-    color: black;
+    color: var(--main-check-color);
 }
 /* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
 
