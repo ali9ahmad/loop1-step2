@@ -1,0 +1,205 @@
+/* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+/************** ROOT STYLES START **************/
+:root{
+    --main-bg-color: #fff;
+    --main-text-color: #aaa;
+    --main-check-color: #000;
+    --main-border-color: #dedede;
+    --main-btn-color: #598bdd;
+    --deliver-btntext-color: #fff;
+}
+
+html{
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 600;
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    max-width: 1150px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+ol,
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+/************** /ROOT STYLES END **************/
+/* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+/************** MAIN STYLES START **************/
+
+.site-main {
+}
+.container {
+}
+.payment__wrapper {
+    display: block;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    width: 100%;
+    max-width: 300px;
+    background-color: var(--main-bg-color);
+    border-radius: 4px;
+}
+
+.fortitle {
+    position: relative;
+    padding-top: 40px;
+    padding-right: 10px;
+    padding-left: 17px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--main-border-color);
+}
+
+.paymnet__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    text-align: center;
+    /* padding-bottom: 25px; */
+    
+}
+
+.paymnet__title::before {
+    position: absolute;
+    display:block;
+    bottom: 60%;
+    right: 54%;
+    margin-bottom: 15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--main-text-color);
+    box-shadow: 12px 0px 0px 0px var(--main-border-color), 
+    24px 0px 0px 0px var(--main-border-color);
+    content: "";
+}
+
+/* .form {
+} */
+
+.input__area {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--main-border-color);
+}
+
+.input__area:hover {
+    background-color: #f2f3f2;
+    cursor: pointer;
+}
+
+.paymetn__image {
+    margin-right: 20px;
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.label__area {
+    align-items: center;
+    font-size: 14px;
+    color: var(--main-text-color);
+}
+
+.form-checkbox {
+    display: none;   
+}
+
+.form-checkbox:checked + .custom-radio {
+    display: inline-block;
+    background-image: url("./img/check.svg");
+    width: 20px;
+    height: 20px;
+    text-align: right;
+    align-self: end;
+}
+
+.custom-radio{
+    position: absolute;
+    right: 15px;
+}
+
+.form-checkbox:checked {
+    color: var(--main-check-color);
+}
+
+.sentbtn {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    font-weight: 550;
+    font-size: 12px;
+    color: var(--deliver-btntext-color);
+    text-align: center;
+    background-color: var(--main-btn-color);
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-end-end-radius: 4px;
+}
+
+.sentbtn::after {
+    position: absolute;
+    right: 33%;
+    content: "";
+    display: inline-block;
+    background-image: url("./img/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 20px;
+}
+
+/************** MAIN STYLES END **************/
